@@ -1,0 +1,61 @@
+.navbar
+{
+    width: 100%;
+    line-height: 80px;
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0%;
+}
+
+#check,.checked
+{
+    display: none;
+}
+
+.right ul
+{
+    list-style: none;
+    display: flex;
+}
+
+.right ul li a
+{
+    text-decoration: none;
+    color: wheat;
+    padding: 10px;
+    transition: all 1s;
+}
+
+@media screen and (max-width:800px)
+{
+    .list
+    {
+        height: 90vh;
+        width: 100%;
+        background-color: rgb(111, 109, 109);
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 70px;
+        left: 100%;
+    }
+    .checked
+    {
+        display: block;
+    }
+    #check:checked~ul
+    {
+        left: 80%;
+    }
+}
+
+*
+{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
